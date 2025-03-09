@@ -1,0 +1,24 @@
+Compulsory:
+Am printat mesajul Heloo World cu ajutorul lui out.printl
+Am pus cuvintele intr-un vector de cuvinte de tipul String : String languages[]
+Am efectuat calculele cerute
+Am calculat suma cifrelor unui număr până când am rămas cu o singură cifră. 
+Am folosit un ciclu while pentru a aduna cifrele numărului atâta timp cât acesta era mai mare de 9, 
+actualizând valoarea lui n cu suma cifrelor la fiecare iterație.
+
+Homework:
+La început, am salvat timpul curent. 
+Am inițializat fiecare muchie din graf cu valoarea -1, indicând astfel că nu am stabilit încă dacă respectiva muchie există sau nu.
+Am selectat primele k noduri (dacă acestea existau) și am creat un k-clic, adăugând muchii între toate aceste noduri. 
+Apoi, am selectat următoarele k noduri (dacă erau disponibile) și am stabilit că nu există muchii între ele, creând astfel un k-stabil. 
+Restul muchiilor au fost adăugate aleator.
+Dacă n era mai mic decât 30_000, am afisat matricea. 
+În caz contrar, am alocat mai multă memorie, am calculat timpul curent și am determinat diferența față de timpul inițial.
+La final, am parcurs din nou graful și am calculat celelalte cerințe prin comparare și numărare.
+
+Bonus:
+Am declarat vectori și indici statici în MAIN pentru a-i putea utiliza în bkt-ul recursiv. 
+Am identificat nodurile care au gradul cel puțin k și le-am stocat într-un vector denumit "candidates". 
+Am preluat această mulțime de noduri și, folosind bkt-ul, am generat pe rând toate mulțimile posibile de noduri. 
+La fiecare pas, am verificat dacă acestea respectă condiția de clica. 
+Dacă nu respectau condiția, opream imediat execuția bkt-ului și treceam la următorul nod.
