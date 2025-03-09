@@ -1,0 +1,4 @@
+Am creat clasele statice Student și Project. 
+Clasa Student conține variabilele name și age, iar clasa Project are variabilele name și type, unde type este de tip enum. 
+Am adăugat metode getter și setter pentru fiecare variabilă. 
+Fiecare clasă include un constructor și o metodă toString() suprascrisă pentru a personaliza afișarea obiectelor cu ajutorul lui  @Override.
