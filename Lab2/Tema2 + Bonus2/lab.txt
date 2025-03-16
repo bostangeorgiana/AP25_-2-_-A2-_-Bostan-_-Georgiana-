@@ -1,0 +1,100 @@
+class Profesori{
+    private String nome;
+    private int id;
+
+    public Profesori(String nome, int id){
+        this.nome = nome;
+        this.id = id;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+    public int getId(){
+        return id;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public void setId(int id){
+        this.id = id;
+    }
+}
+
+enum ProjectType {
+    THEORETICAL, PRACTICAL;
+}
+
+class Student{
+    private int id;
+    private String name;
+
+    public Student(int id, String name){
+        this.id = id;
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Project{name='" + name + "', id=" + id + "}";
+    }
+}
+
+class Project{
+    private ProjectType type;
+    private String name;
+
+    public Project(ProjectType type, String name)
+    {
+        this.type = type;
+        this.name = name;
+    }
+
+    public ProjectType getType(){
+        return type;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setType(ProjectType type){
+        this.type = type;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Project{name='" + name + "', type=" + type + "}";
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student(1, "John");
+        Project p1 = new Project(ProjectType.PRACTICAL, "John");
+
+        System.out.println(s1);
+        System.out.println(p1);
+    }
+}
