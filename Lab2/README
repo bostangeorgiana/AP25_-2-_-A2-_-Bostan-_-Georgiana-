@@ -1,0 +1,19 @@
+Compulsory:
+Am creat clasele statice Student și Project. 
+Clasa Student conține variabilele name și age, iar clasa Project are variabilele name și type, unde type este de tip enum. 
+Am adăugat metode getter și setter pentru fiecare variabilă. 
+Fiecare clasă include un constructor și o metodă toString() suprascrisă pentru a personaliza afișarea obiectelor cu ajutorul lui  @Override.
+
+Homework:
+Proiectul este structurat astfel:
+Clasa "Person": Clasa abstracta care defineste atributele comune pentru studenti si profesori (nume si data nastere) + metode legate de acestea.
+Clasa "Teacher" si Clasa "Student": Clasele care extind "Person" si adauga functionalitati specifice pentru profesori si studenti.
+Clasa "Problem": Contine vectori pentru studenti, profesori si proiecte. Are metodele getAllPersons (care returneaza toti participantii) si allocateProjects (care implementeaza un algoritm greedy pentru alocarea proiectelor).
+Clasa "Solution": Permite atribuirea proiectelor studentilor si vizualizarea solutiei finale.
+Algoritmul greedy aloca fiecarui student primul proiect disponibil din lista sa de preferinte.
+
+Bonus:
+Am implementat clasa "HallTheoremChecker" care contine doua array-uri (unul u studentii, unul cu proiectele).
+Metoda "isAllocationPossible" ajuta la distribuirea tuturor proiectelor catre student. 
+Acesta genereaza toate subseturile cu ajutorul unei matrici binare. 
+Pentru fiecare subset, verifica daca  numarul de proiecte disponibile pentru studentii din acel subset este mai mare sau egal cu numarul de studenti din subset. 
