@@ -1,1 +1,9 @@
 Compulsory:
+
+- Clasa Location: 
+  Reprezinta o locatie pe harta, care include un nume distinct si un tip asociat (creat prin enum), care poate fi friendly, neutral, sau enemy. 
+  Clasa implementeaza interfata Comparable, astfel incat locatiile sa fie ordonate dupa numele lor.
+
+Stream API:
+- Folosind Stream API, locatiile de tip friendly sunt adunate intr-un TreeSet, iar acestea sunt afisate sortate conform ordinii naturale (adica dupa numele lor).
+- Locatiile de tip enemy sunt adunate intr-un LinkedList si sunt sortate prima data dupa tipul locatiei si apoi dupa numele lor.
