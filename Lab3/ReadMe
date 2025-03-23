@@ -1,5 +1,20 @@
 Homework:
+Proiectul este structurat astfel:
+- Clasa Flight: 
+  Reprezinta un zbor, care include un aeroport, un numar de inmatriculare (tailNumber) si un interval de aterizare (landingInterval), definit prin doua obiecte de tip LocalTime. 
+  Clasa implementeaza interfata Comparable, ordonand zborurile dupa ora de start a aterizarii.
+- Clasa Runway: 
+  Reprezinta o pista de aterizare si contine un nume si o variabila booleana care indica daca pista este disponibila sau nu.
+- Clasa Airport: 
+  Reprezinta un aeroport, care contine o lista de piste de aterizare si un set de zboruri. 
+  Aeroportul permite adaugarea si gestionarea pistelor si zborurilor, asigurand ca zborurile nu se suprapun pe aceleasi piste.
+- Clasa Schedule: 
+  Implementati un algoritm simplu care sorteaza zborurile dupa timpul de aterizare si le aloca pistelor disponibile, verificand conflictele de intervale intre zboruri. 
+  Fiecare zbor este alocat unei piste, iar daca nu exista nicio pista disponibila, sistemul afiseaza un mesaj corespunzator.
 
-
-Bonus:
-
+Bonus: 
+Am implementat clasa FlightSchedulerBalanced, care: 
+  Creeaza o coada de piste, ordonata dupa numarul de zboruri deja atribuite fiecarei piste. 
+  Atribuie fiecarui zbor prima pista disponibila care are cele mai putine zboruri alocate. 
+  Verifica daca numarul de zboruri atribuite fiecarei piste este echilibrat (adica nu exista piste cu un numar mult mai mare de zboruri fata de altele). 
+  De asemenea, am creat o metoda determineMinRunwaysNeeded() care calculeaza minimul de piste necesare pentru a satisface cerintele de programare a zborurilor.
