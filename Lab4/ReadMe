@@ -11,4 +11,14 @@ Homework:
 	  indFastestRoutes : cauta cele mai rapide drumuri folosind algoritmul lui Dijkstra (drum de cost minim)
 
 Bonus:
-  Scriu acum, imi pare rau, mi-a fost foarte rau zilele acestea. 5 minute
+SafeRouteCalculator:
+	Calculam cele mai sigure rute pe baza probabilitatilor
+	calculateSafestRoutes: afisează rutele si probabilitatea de siguranta intre locatii
+	printSafeRoutes: afiseaza doar rutele care au o probabilitate de siguranta mai mare de 0.8
+
+RandomProblemGenerator:
+	generateRandomLocation: creeaza o locatie cu un nume aleatoriu si o probabilitate de siguranta random (intre 0 si 1)
+	generateRandomLocations: creeaza o lista de locatii aleatorii
+
+StatisticsCalculator:
+	calculateStatistics: afiseaza numarul de locatii de fiecare tip
