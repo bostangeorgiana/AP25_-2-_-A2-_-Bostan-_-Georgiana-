@@ -9,6 +9,3 @@ Homework:
 	  Constructorul creaza un graf ponderat
 	  addEdge : adauga muchii intre locatii cu timpul asociat (setam timpul ca si greutate a muchiei)
 	  indFastestRoutes : cauta cele mai rapide drumuri folosind algoritmul lui Dijkstra (drum de cost minim)
-
-Bonus:
-  Atasez acum
