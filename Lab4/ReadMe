@@ -1,0 +1,14 @@
+Homework:
+  LocationProcessor:
+	  am creat o mapare care retine timpul dintre locatii
+	  createGraph : metoda pentru a crea un graf bazat pe locatiile si timpul dinte ele
+	  calculateShortestTimes : metoda pentru a calcula timpul minim dintre locatii cu ajutorul algoritmului lui Dijkstra
+	  printShortestTimes : metoda pentru a afisa locatiile grupate dupa tipuri
+
+  MapGraph:
+	  Constructorul creaza un graf ponderat
+	  addEdge : adauga muchii intre locatii cu timpul asociat (setam timpul ca si greutate a muchiei)
+	  indFastestRoutes : cauta cele mai rapide drumuri folosind algoritmul lui Dijkstra (drum de cost minim)
+
+Bonus:
+  Atasez acum
